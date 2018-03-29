@@ -41,44 +41,7 @@ public class BillBreakdown {
 	}
 	public double getUnit1Percentage() {
 		System.out.println(unit1percentage);
-		return unit1percentage;
-	}
-	
-
-//    private final String propertyName;
-//    private Map<String, Double> billBreakdown = new HashMap<String, Double>();
-//    
-//
-//    public BillBreakdown(String propertyName, HashMap <String, Double> billBreakdown) {
-//        
-//    	this.propertyName = propertyName;
-////        actuallyBreakDownBill(billBreakdown.get(propertyName));
-//        
-//    }
-//    
-//    public String getPropertyName() {
-//    	return propertyName;
-//    }
-//
-//    public Map <String, Double> getBillBreakdown() {
-//        return billBreakdown;
-//    }
-    
-//    public Map<String, Double> actuallyBreakDownBill(double total){
-//    
-//    	String[] units = {"a", "b" , "c"};
-//    	double[] percentages = {.20, .75, .05};
-//    	for(int i = 0; i < 3; i++) {
-//    		 billBreakdown.put(units[i],(percentages[i] * total));
-//    	}
-//    	
-//    	return billBreakdown;
-//    }
-//    mapOfBills.get(propertyName)
-//	double total = 0.0;
-//	for(Map<String, Double> i: mapOfBills.values()) {
-//		total += i.values();
-//	}
-    
+		return this.unit1percentage;
+	} 
     
 }

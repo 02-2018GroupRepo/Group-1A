@@ -1,12 +1,9 @@
 package bootcamp
 
-import java.util.Map
-
 import bootcamp.dao.BillBreakdownDAO
 import bootcamp.model.BillBreakdown
 import bootcamp.services.BillBreakdownService
 import spock.lang.Specification
-
 
 class BillBreakDownSpec extends Specification {
 	
@@ -24,17 +21,14 @@ class BillBreakDownSpec extends Specification {
 		and: "a bill breakdown DAO that always returns this fake bill breakdown"
 		BillBreakdownDAO dao = Stub(BillBreakdownDAO.class);
 		service.billBreakdownDao = dao
-		dao.getPropertyMapByName() >> sample
-		
+		dao.getPropertyMapByName(propertyName) >> sample
 		
 		when:"a bill breakdown is requested"
 		BillBreakdown sample2 = service.getBillBreakdownByPropertyName(propertyName);
 		double result = sample2.getUnit1Percentage();
 		
 		then: " a bill breakdown is returned"
-		
 		sample2.getUnit1Percentage() == 0.90;
-		
 	}
 	
 //	def"testing the BillBreakdownDAO"(){
