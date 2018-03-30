@@ -23,15 +23,9 @@ public class BillBreakdownController {
     	
     }
 
-    @RequestMapping("/billBreakdown1")
-    public BillBreakdown billBreakdown1() {
-        BillBreakdown bb = new BillBreakdown(0.4,0.6,0.1);
-        return bb;
-
-    }
-
     @RequestMapping (name="/addBillBreakdown",method= RequestMethod.POST)
-    public Map<String, Double> billBreakdownMethod (@RequestBody BillBreakdown bb, @RequestParam(value = "propertyName") String propertyName){
+    public Map<String, Double> billBreakdownMethod (@RequestBody BillBreakdown bb, @RequestParam(value = "propertyName")
+            String propertyName){
         BillBreakdown bb2 = bb;
         bbs.addToDAOMap(propertyName,bb2);
         return bb2.getBillBreakdown();

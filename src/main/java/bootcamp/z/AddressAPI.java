@@ -1,4 +1,4 @@
-package bootcamp;
+package bootcamp.z;
 //
 //import java.io.BufferedReader;
 //import java.io.InputStream;

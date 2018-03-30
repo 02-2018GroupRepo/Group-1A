@@ -1,4 +1,4 @@
-package bootcamp.model;
+package bootcamp.z;
 //
 public class Address {
 //	

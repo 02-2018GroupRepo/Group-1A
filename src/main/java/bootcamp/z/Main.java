@@ -1,4 +1,4 @@
-package bootcamp;
+package bootcamp.z;
 //
 public class Main {
 //	
