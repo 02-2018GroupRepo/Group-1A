@@ -19,7 +19,11 @@ public class BillBreakdownService {
 		return billBreakdownDao.getPropertyMapByName(propertyName);//billBreakdownMap.get(propertyName);
 	}
 	
-	
+	public void addToDAOMap (String propertyName, BillBreakdown bbb){
+
+		billBreakdownDao.addToMap(propertyName,bbb);
+
+	}
 	
 //	/////////////////////////////////////////////////////////////////
 //	public BillBreakdownService(Map<String, BillBreakdown> bill) {

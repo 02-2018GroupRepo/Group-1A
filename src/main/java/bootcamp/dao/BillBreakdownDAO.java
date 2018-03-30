@@ -24,4 +24,9 @@ public class BillBreakdownDAO {
 		return billBreakdownMap.get(propertyName);
 	}
 
+	public void addToMap(String propertyName, BillBreakdown billBreakdown){
+
+        billBreakdownMap.put(propertyName,billBreakdown);
+    }
+
 }
